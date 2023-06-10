@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Flock Simulation</title>
+  
+  <script src='boid.js'></script>
+  <script src='obstacle.js'></script>
+  <script src="../p5.js"></script>
+  <script src="sketch.js"></script>
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <main>
+    <h1> FLOCK SIMULATION </h1>
+    <p> Here is a basic flock simulation I created using P5 javascript library.
+    <p>Don't know what this is about? Watch this videos I created explaining the details and how to create one of your own.</p>
+  
+    
+    <div id="controls">
+    
+      <label id="yep">Separation</label>
+      <input type="range" min="0" max="3" value="1" step=".1" id="rangeSeparation" oninput="this.nextElementSibling.value = this.value">
+      <output>1.0</output> 
+
+      <label id="yep">Alignment</label>
+      <input type="range" min="0" max="3" value="1" step=".1" id="rangeAlignment" oninput="this.nextElementSibling.value = this.value">
+      <output>1.0</output>
+
+      <label id="yep">Cohesion</label>
+      <input type="range" min="0" max="3" value="1" step=".1" id="rangeCohesion" oninput="this.nextElementSibling.value = this.value">
+      <output>1.0</output>
+
+      <label for="boidButton">Add boid</label>
+      <input type="radio" checked="checked" id="boidButton" name="addingElement" value="Boid">
+
+      <label for="obstacleButton">Add obstacle</label>
+      <input type="radio" id="obstacleButton" name="addingElement" value="Obstacle">
+    </div>
+    
+  </main>
+</body>
+
+</html>

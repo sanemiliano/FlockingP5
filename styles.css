@@ -1,0 +1,26 @@
+h1{
+	display: flex;
+	justify-content: center;
+	
+}
+body{
+	font-family: "Lucida Console", monospace;
+	/*font-size: 1.1em;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.minisec{
+	border-color: e7ff00;
+}
+#controls{
+	padding: .8em;
+	
+}
+button{
+	font-family: "Lucida Console", monospace;
+	border-radius: 20%;
+}
+label{
+	font-weight: bold;
+}
